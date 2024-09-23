@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:#d2adb0;
+}
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #6a1920;
+  color: white;
+  font-size: 30px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #6B171E;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #521116;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #70232B;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tagline{
+  text-align: center;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="logo.jpg" alt="logo" width="60" height="60">
+  </div>
+
+  <ul>
+    <li><a href="homepagefinal.html" style="font-family:Arial">Home</a></li>
+    
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn" style="font-family:Arial">Fashion Hub</a>
+      <div class="dropdown-content" style="font-family:Arial">
+        <a href="fashionhubwomens.html">Women's</a>
+        <a href="fashionhubmens.html">Men's</a>
+        <a href="fashionhubkids.html">Kids</a>
+        <a href="fashionhubaccessories.html">Accessories</a>
+      </div>
+    </li>
+  
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn" style="font-family:Arial">Furtniture House</a>
+      <div class="dropdown-content" style="font-family:Arial">
+        <a href="furniturehouseLR.html">Living Room</a>
+        <a href="furniturehouseBR.html">Bedroom</a>
+        <a href="furniturehouseDR.html">Dining Room</a>
+        <a href="furniturehouseD.html">Home Decor</a>
+        <a href="furniturehousemandirs.html">Temples (Mandirs)</a>
+      </div>
+    </li>
+  
+    <li><a href="aboutus.html" style="font-family:Arial">About Us</a></li>
+    <li><a href="contactus.html" style="font-family:Arial">Contact Us</a></li>
+  </ul>
+<h1>Kid's Fashion</h1>
+<h3>Here is our cute range of outfits for you kids!</h3>
+<div class="row">
+    <div class="column"><img src="images/kids/Kids (1).jpg" alt="Womens1" width="100%"></div>
+    <div class="column"><img src="images/kids/Kids (2).png" alt="Womens1" width="100%"></div>
+    <div class="column"><img src="images/kids/Kids (3).png" alt="Womens1" width="100%"></div>
+    <div class="column"><img src="images/kids/Kids (4).png" alt="Womens1" width="100%"></div>
+    <div class="column"><img src="images/kids/Kids (5).png" alt="Womens1" width="100%"></div>
+</div>
+<h4>Contact Us</h4>
+<a href="https://www.facebook.com/people/Mangla-fashion-hub/100063756030182/" target="_blank"><img src="images/Logo and others/facebook.png" width="50" height="50"></a>
+
+</body>
+</html>
+
+

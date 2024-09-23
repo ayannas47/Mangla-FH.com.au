@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: brown;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-container{
+    position: relative;
+    background-color: aliceblue;
+    width: 25em;
+    height: 4.4em;
+    border-radius: 5px;
+}
+input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    color: black;
+    font-size: 25px;
+    padding: 0 18px;
+    z-index: 3;
+}
+#suggestion{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    font-size: 25px;
+    color: antiquewhite;
+}
+@media screen and (max-width: 600px){
+    .input-container {
+        width: 80vw;
+    }
+}
+</style>
+<head>
+
+</head>
+<body>
+<div class="input-container">
+    <input type="text" id="input" placeholder="Search Our Products" autocomplete="off"/>
+    <span id="suggestion"></span>
+</div>
+<script>
+ let products = [
+    "Emerald Earrings", " Pink Earrings", 
+ ]
+</script>
+</body>
+
+</html>

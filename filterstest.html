@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:#d2adb0;
+}
+.container {
+    position: relative;
+    max-width: 1350px;
+    width: 100%;
+    padding: 20px;
+    margin: 50px auto;
+}
+button{
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #f9f9f9;
+    border-color: #521116;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2)
+}
+button.active{
+    background-color: #70232B;
+    color:#d2adb0;
+}
+.filter_buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #6a1920;
+  color: white;
+  font-size: 30px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #6B171E;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #521116;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #70232B;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <img src="logo.jpg" alt="logo" width="60" height="60">
+  </div>
+
+<ul>
+  <li><a href="homepagefinal.html" style="font-family:Arial">Home</a></li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" style="font-family:Arial">Fashion Hub</a>
+    <div class="dropdown-content" style="font-family:Arial">
+      <a href="fashionhubwomens.html">Women's</a>
+      <a href="fashionhubmens.html">Men's</a>
+      <a href="fashionhubkids.html">Kids</a>
+      <a href="fashionhubaccessories.html">Accessories</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" style="font-family:Arial">Furtniture House</a>
+    <div class="dropdown-content" style="font-family:Arial">
+      <a href="furniturehouseLR.html">Living Room</a>
+      <a href="furniturehouseBR.html">Bedroom</a>
+      <a href="furniturehouseDR.html">Dining Room</a>
+      <a href="furniturehouseD.html">Home Decor</a>
+      <a href="furniturehousemandirs.html">Temples (Mandirs)</a>
+    </div>
+  </li>
+
+  <li><a href="aboutus.html" style="font-family:Arial">About Us</a></li>
+  <li><a href="contactus.html" style="font-family:Arial">Contact Us</a></li>
+</ul>
+<h1> Welcome to Mangla's Fashion Hub</h1>
+<div class="container">
+    <div class="filter_buttons">
+    <button data-name="all" class="active">Show All</button>
+    <button data-name="mens">Mens</button>
+    <button data-name="womens">Womens</button>
+    <button data-name="kids">Kids</button>
+    <button data-name="accessories">Accessories</button>
+    </div>
+    <div class="filter_cards">
+        <div class="card" data-name="Mens">
+            <img src="search bar/Mens (2).png"/>
+            <div class="cardbody">
+              <p class="card_title">Mens Grey Kurta</p>
+            </div>
+            <img src="search bar/Mens (3).png"/>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
